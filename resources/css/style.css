@@ -3,7 +3,7 @@
     --darkblue: #000d2a;
     --yellow: #e4b116;
 
-    --corner-width: 4px;
+    --corner-radius: 4px;
 
     font-family: Calibri;
 }
@@ -13,6 +13,8 @@ html body {
     color: white;
     text-align: center;
     display: block;
+
+    justify-content: center;
 }
 
 .flex-container {
@@ -51,11 +53,38 @@ nav img {
     height: 100px;
 
     border: none;
-    border-radius: var(--corner-width);
+    border-radius: var(--corner-radius);
 
     justify-content: center;
     align-content: center;
     
     margin-top: 40vh;
-
 }
+
+#buttons {
+    justify-content: center;
+}
+
+.game-button {
+    background-color: var(--yellow);
+    color: var(--darkblue);
+
+    border-radius: var(--corner-radius);
+
+    padding: 10px;
+    margin: 40px;
+
+    width: 100px;
+    height: 100px;
+    
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.game-button img {
+    width: 50px;
+    height: auto;
+}
+
