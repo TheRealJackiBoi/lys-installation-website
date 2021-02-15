@@ -1,0 +1,26 @@
+{
+  "name": "lysinstallation-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheRealJackiBoi/lys-installation-website.git"
+  },
+  "keywords": [
+    "SchoolProject"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheRealJackiBoi/lys-installation-website/issues"
+  },
+  "homepage": "https://github.com/TheRealJackiBoi/lys-installation-website#readme"
+}

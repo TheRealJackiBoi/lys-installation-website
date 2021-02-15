@@ -1,24 +1,26 @@
 const http = require('http');
 const fs = require('fs')
 var path = require('path');
-var express = require('express');
-var router = express.Router();
-
+const express = require('express');
+const server = express();
 
 
 const hostname = '127.0.0.1';
 const port = 8080;
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.writeHead(200, { 'content-type': 'text/html' })
-  
-  res.end();
+server.set('port', process.env.PORT || port);
+
+server.get('/', (req, res) =>{
+  res.send('index.html')
 });
 
-router.get('/', function (req, res) {
-    fs.createReadStream('index.html').pipe(res)
-  })
+server.use((req, res) => {
+  res.type('text/plain');
+  res.status(505);
+  res.send('Error page');
+})
+
+
 
 
 server.listen(port, hostname, () => {
