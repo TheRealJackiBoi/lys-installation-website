@@ -1,26 +1,16 @@
 {
-  "name": "lysinstallation-website",
+  "name": "sockets_p5",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
+  "description": "This is an example for how to use sockets with p5.js.",
+  "main": "server.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheRealJackiBoi/lys-installation-website.git"
-  },
-  "keywords": [
-    "SchoolProject"
-  ],
-  "author": "",
+  "author": "Daniel Shiffman",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheRealJackiBoi/lys-installation-website/issues"
-  },
-  "homepage": "https://github.com/TheRealJackiBoi/lys-installation-website#readme"
+  "dependencies": {
+    "express": "^4.17.1",
+    "requirements": "^1.4.0",
+    "socket.io": "^1.4.5"
+  }
 }
