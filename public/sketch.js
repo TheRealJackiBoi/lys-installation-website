@@ -1,7 +1,7 @@
 var socket;
 
 function setup() {
-  socket = io.connect('http://localhost:8000');
+  socket = io.connect('https://lys-installation-website-32gsd.ondigitalocean.app/');
   /*socket.on('mouse',
     function(data) {
       console.log("Got: " + data.x + " " + data.y);
